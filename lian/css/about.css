@@ -1,0 +1,297 @@
+
+.header-content{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #f0f0f2;
+}
+
+.header-discription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 115px 0px 118px 14.4%;
+
+}
+
+.header-laptop-img img{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    /* margin: 30px 0; */
+}
+.about-span{
+    margin-top: 42px;
+}
+.header-discription span{
+    margin-top: 42px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 7.2px; 
+}
+
+.h3-about{
+    margin: 35px 0px;
+}
+
+.main-h1{
+    padding: 10px 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    height: 50px;
+    background: #000000;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 4.8px;
+}
+.our-skills{
+    visibility: hidden;
+    transition: .3s;
+    /* margin-bottom: 100px; */
+}
+
+.skill-content{
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-content img{
+    display: block;
+    max-width: 100%;
+    
+    object-fit: cover;
+    /* margin: 0px auto; */
+}
+
+.our-story{
+    margin-left: 30px;
+    width: 30vw;
+}
+.our-story h3{
+   
+    font-family: "Roboto Light";
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 7.2px;
+    line-height: 24px;
+    text-transform: uppercase;
+ 
+}
+
+.our-story p{
+    padding-top: 10px;
+    color: #777777;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.our-skills-item{
+    padding: 10px 0;
+}
+.team{
+    margin: 100px 0 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.team h2{ 
+    text-align: center;
+    color: #000000;
+    font-family: "Roboto - Light";
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.team p{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 43px;
+    color: #777777;
+    font-family: Roboto;
+    font-size: 14px;
+    width: 595px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.team-staff{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.founder-photo{
+    background: #eeeeee;
+    text-align: center;
+}
+
+.founder-photo img{
+    position: relative;
+    bottom: -4px;
+}
+.information-staff{
+    padding: 35px 43px 31px 34px;
+    width: 281px;
+}
+
+.name-foudation{
+    color: #041608;
+    font-family: "Roboto Light";
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.96px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.position-staff{
+    color: #2f302f;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    line-height: 14px;
+}
+
+.discription-staff{
+    padding-top: 25px;
+    color: #777777;
+    font-family: "Roboto Light";
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.48px;
+    line-height: 24px;
+}
+
+.line-background{
+    position: relative;
+    background-color: #ebebeb;
+    width: 100%;
+    height: 10px;
+}
+
+.line-animation{
+    top: 3px;
+    position: absolute;
+    height: 3px;
+    width: 1px;
+    background: #000000
+}
+
+
+
+.animation-circles{
+    z-index: 99;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+
+.percent-animate{
+    position: absolute;
+    text-align: center;
+    width: 40px;
+    height: 21px;
+    background-color: #041608;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.percent-blocks{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+.percent-animate::before{
+    content: ''; 
+    position: absolute;
+    left: 0px; bottom: -15px; /* Положение треугольника */
+    border: 8px solid transparent;	border-left: 8px #041608; border-top: 8px solid #041608;
+}
+
+.post:hover .name-foudation{
+    color: #f0f0f2;
+} 
+
+
+@media screen and (max-width: 980px){
+    .header-laptop-img{
+        display: flex;
+        justify-content: flex-end;
+        width: 100vw;
+        
+       }
+}
+@media screen and (max-width: 1350px){
+    .skill-content{
+        margin-top: 72px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+     
+    .our-story{
+        margin-left: 0px;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 630px){
+    .header-discription{
+        display: flex;
+        flex-direction: column;
+        padding: 115px auto 118px;
+    
+    }
+    .team p{
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        margin-top: 43px;
+        color: #777777;
+        font-family: Roboto;
+        font-size: 14px;
+        width: 80vw;
+        font-weight: 400;
+        line-height: 24px;
+    }
+        .team-staff img{     
+        max-width: 100%;   
+    }
+}
+    @media screen and (max-width: 360px){
+        .information-staff{
+            padding: 35px 20px 35px;
+            width: calc(100vw-20px);
+            margin: 0;
+        }
+        .founder-photo{
+            width: 320px;
+            margin: 0px ;
+        }
+}

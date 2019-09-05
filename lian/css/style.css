@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+    box-sizing: border-box;
+}
+
+.adaptive-page{
+    overflow-y: hidden;
+}
+
+.dws-progress-bar{
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#preloader{
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+}
+.progress-percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-style: 40px;
+    color: #000;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+.main-padding{
+    padding: 0px 14.4%;
+}
+
+.main-header{
+    margin: 28px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navigation{
+    display: flex;
+}
+
+.navigation li{
+    padding-left: 45px;
+}
+
+.navigation li:not(:last-child):before{
+    content: '';
+    visibility: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 20px;
+    height: 1px;
+    background-color: #06060a;
+    transition: 0.1s;
+   
+}
+
+.navigation li:hover{
+    font-weight: 800;
+    font-style: bold;
+}
+.navigation li:hover::before{
+    visibility: visible;
+}
+.navigation a{
+    color: #777777;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.navigation a:hover{
+    color: #000000;
+}
+
+.burger-icon{
+    display: none;
+}
+
+
+
+
+
+.footer-logo{
+    padding: 60px 0px 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav ul{
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 20px 0;
+    border-top: 3px solid #fafafa;
+    border-bottom: 3px solid #fafafa;
+ 
+}
+
+.footer-nav li{
+    padding: 0px 27px;
+}
+
+.footer-nav a{
+    color: #777777;
+    font-family: "Font Awesome";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+}
+
+.footer-nav a:hover{
+    color: #000;
+}
+
+.copiright{
+    padding: 37px 0px 47px;
+    text-align: center;
+    color: #9c9c9c;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.33px;
+}
+
+.copiright a{
+    color: #000;
+    letter-spacing: 0.33px;
+}
+
+.copiright a:hover{
+    color: #777777;
+}
+
+  #adaptive-menu{
+    display: none;
+    width: 100%;
+    background: #9c9c9c;
+    position: absolute;
+    height: 100vh;
+    color: #777777;
+    opacity: 0.99;
+    transition: .5s;  
+  }
+
+  .adaptive-navigation{
+      text-align: center;
+  }
+
+  .adaptive-navigation a{
+      color: #fff;
+      text-transform: uppercase;
+  }
+
+  .adaptive-navigation li{
+      padding-top: 25px;
+  }
+  
+
+  .search-adapt-items{
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+
+.adaptive-search{
+    display: none;
+    padding: 2px;
+    margin-right: 10px;
+    padding-left: 10px;
+    border: 2px solid #777;
+    border-radius: 30px;
+    transition: .5s;
+
+}
+  
+.search-adapt-items a{
+    color: #fff;
+}
+ 
+  .post{
+    background: #ffffff;
+    transition:  0.3s ease;
+}
+
+.post:hover{
+    background: #000;
+    color: #fff;
+}
+
+.post:hover h6 h5 h4 h3 h2{
+    color: #fafafa;
+} 
+
+.menu-item{
+    display: block;
+}
+
+.search-header{
+    display: none;
+}
+#nav-search{
+    width: 300px;
+    padding: 2px;
+    padding-left: 10px;
+    border: 2px solid #777;
+    border-radius: 30px;
+}
+
+
+@media screen and (max-width: 1200px){
+    .main-header{
+        justify-content: center;
+        flex-direction: column;
+}
+
+ .header-nav{
+     margin-top: 20px;
+    
+ }
+ .header-nav ul{
+    display: flex;
+    justify-content: space-between;
+ }
+ .header-nav li{
+     padding-left: 15px;
+ }
+
+}
+
+    
+
+  
+  @media screen and (max-width: 760px) {
+    .header-nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .main-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .burger-icon{
+        display: block;
+        
+    }
+    .header-nav{
+        display: none;
+    }
+
+  }
+
+  
+

@@ -1,0 +1,230 @@
+
+.header-information{
+    background-image: url("../img/woman.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* background: #777777; */
+}
+
+.header-content h1{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+    background: #000;
+    padding: 11px 40px;
+    width: 490px;
+}
+
+.latest-news{
+    padding: 43px 0px 122px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 7.2px;
+}
+
+.h-news{
+    padding-top: 115px;
+}
+
+.blog-h2{
+    margin-top: 130px;
+    font-weight: 700;
+    color: #333333;
+    font-family: "Roboto Light";
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 4.5px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.h2-information{
+    margin: 27px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.h2-information div{
+    padding-right: 60px;
+}
+
+.lamp-photo{
+    display: flex;
+    justify-content: center;
+}
+
+.lamp-photo img{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.blog-text p{
+    padding: 47px 4.2% 0 4.2%;
+    color: #777777;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    /* Text style for "Lorem ipsu" */
+    font-family: "Roboto - Regular";
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    line-height: 30px;
+
+}
+.blog-padding{
+    padding: 0px 20.8%;;
+}
+
+.italic-p{
+    margin: 32px 0;
+    padding: 23px 31px 29px 42px;
+    border: 1px solid #e1e1e1;
+    border-left: 5px solid #777;
+    color: #777777;
+    font-family: "PT Serif";
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 30px;
+}
+
+.blog-text h4{
+    padding: 0px 4.2%;
+}
+
+.blog-h3{
+    margin-top: 84px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.blog-section{
+    margin: 50px 0px 25px;
+   display: grid;
+   grid-template-areas: 
+   "name email website"
+   "message message message";
+   grid-gap:25px;
+    grid-template-columns: repeat(autofitt, minmax(250px, 1fr));
+    padding: 0px 24vw;
+}
+
+.blog-section input{
+    border: 1px solid #e1e1e1;
+    padding: 14px;
+}
+
+#name{
+    grid-area: name;
+    border-left: solid 3px #959595;
+    
+}
+
+#email{
+    grid-area: email;
+}
+
+#website{
+    grid-area: website;
+}
+
+#message{
+    grid-area: message;
+    border: 1px solid #e1e1e1;
+    padding: 14px;
+    resize: none;
+}
+
+
+
+
+.b-button{
+    display: flex;
+    justify-content: center;
+}
+
+.blog-btn{
+    border: none;
+    padding: 15px 42px;
+    background: #000;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21.33px;
+    text-transform: uppercase;
+    letter-spacing: 0.79px;
+}
+
+@media screen and (max-width:1200px){
+.blog-section{
+    padding: 0px 15vw;
+    }
+}
+
+@media screen and (max-width: 815px){
+    .blog-section{
+        margin: 50px 0px 25px;
+       display: grid;
+       grid-template-areas: 
+       "name"
+       "email"
+       "website"
+       "message";
+       grid-gap:25px;
+        grid-template-columns: repeat(autofitt, minmax(250px, 1fr));
+        padding: 0px 15vh;
+        }
+    }
+
+@media screen and (max-width: 550px){
+    .header-content h1{
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 4.8px;
+        background: #000;
+        padding: 11px 40px;
+        width: auto;
+    }
+    
+    .italic-p{
+        padding: 0;
+    }
+    .blog-padding{
+        padding: 0 20px;
+    }
+    .blog-h2{
+        margin-top: 130px;
+        font-weight: 700;
+        color: #333333;
+        font-family: "Roboto Light";
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 4.5px;
+        line-height: 30px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .blog-section{
+        padding: 0px 40px;
+        }
+    
+}

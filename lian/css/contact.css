@@ -1,0 +1,272 @@
+.header-information{
+    padding-left: 14.4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f0f0f2;
+    
+}
+
+.header-content{
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.h-img img{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+.contact-h1{
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+    background: #000;
+    padding: 11px 40px;
+  }
+
+.latest-news{
+    padding: 43px 0px 122px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 7.2px;
+}
+
+
+.contact-h2{
+    color: #777;
+    font-size: 30px;
+    letter-spacing: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.office-info{
+    margin: 140px 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.office-info span{
+    letter-spacing: 0.4px;
+    line-height: 30px;
+    color: #2f302f;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.contact-hr{
+    width: 60px;
+    height: 1px;
+    border: none;
+    background: #000;
+}
+
+.office-hours, .address , .tell{
+    margin-top: 36px;
+    font-weight: bold;    
+}
+
+.fax{
+    font-weight: bold;
+}
+
+.contact-form{
+    margin-left: 65px;
+   text-align: left;
+}
+
+.input-forms{
+   
+display: grid;
+grid-template-areas: 
+'name email'
+'message message';
+grid-gap: 30px;
+
+}
+#map img{
+    width: 100%;
+}
+.contact-btn{
+    margin-top: 30px;
+    padding: 14px 52px;
+    color: #ffffff;
+    background: #000;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21.33px;
+    text-transform: uppercase;
+    letter-spacing: 0.79px;
+}
+
+.name{
+    grid-area: name;
+}
+
+.email{
+    grid-area: email;
+}
+
+.message{
+    grid-area: message;
+}
+.contact-form input{
+    width: 100%;
+    border: 1px solid #777;
+    font-style: italic;
+    color: #777777;
+    padding: 15px 0px 15px 9px;
+}
+
+
+#name-form{
+    
+    border-left: 3px solid #777;
+    
+}
+
+#email{
+    grid-area: 'e';
+}
+#message-form{
+    grid-area: 'm';
+}
+
+.value-contact{
+    margin-top: 65px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;   
+    
+}
+
+.value-span{
+    margin-top: 42px;
+    /* Style for "Our Values" */
+width: 37%;
+margin-left: auto;
+margin-right: auto;
+color: #777777;
+font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+letter-spacing: 0.35px;
+line-height: 30px;
+}
+
+.our-goals{
+    margin-top: 66px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 32px;
+}
+
+.who-are{
+    padding: 20px;
+}
+
+.who-are img{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+.our-goals h4{  
+    margin: 24px 0 42px;
+    color: #000000;
+    font-family: "Roboto Light";
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 7.2px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.our-goals p{
+    width: 310px;
+    font-family: "Roboto - Regular";
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    line-height: 30px;
+    color: #777777;
+    font-family: Roboto;
+    font-size: 14px;
+
+}
+
+
+@media screen and (max-width: 1000px){
+    .value-span{
+        margin-top: 42px;
+        width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+        color: #777777;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.35px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 965px){
+.office-info{
+
+    justify-content: center;
+}
+.contact-form{
+    
+    margin: 20px 0px;
+}
+
+
+.contact-btn{
+ 
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+}
+@media screen and (max-width: 560px){
+.contact-h1{
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 34px;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+    background: #000;
+    padding: 11px 40px;
+  }
+}
+@media screen and (max-width: 420px){
+    .our-goals p{
+        width: 290px;
+        font-family: "Roboto - Regular";
+        font-weight: 400;
+        letter-spacing: 0.35px;
+        line-height: 30px;
+        color: #777777;
+        font-family: Roboto;
+        font-size: 14px;
+    
+    }
+    .contact-h2{
+        color: #777;
+        font-size: 25px;
+        letter-spacing: 12px;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+    
+}
