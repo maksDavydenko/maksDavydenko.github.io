@@ -1,0 +1,116 @@
+@media screen and (max-width: 1499px) {
+  .main-banner__aside {
+    display: flex; }
+
+  .container {
+    width: 85%; } }
+@media screen and (max-width: 1250px) {
+  .rooms__blocks_aside-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+
+  .feedback {
+    flex-direction: column; }
+
+  .feedback-item {
+    margin-bottom: 30px; } }
+@media screen and (max-width: 980px) {
+  .rooms__blocks_aside-left {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+
+  .rooms__blocks_center, .rooms__item {
+    margin: auto; }
+
+  .news__items {
+    justify-content: space-around; } }
+@media screen and (max-width: 550px) {
+  .main-banner__title {
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%); }
+    .main-banner__title-item {
+      color: #ffffff;
+      font-size: 60px; }
+    .main-banner__title-subtitle {
+      color: #fff;
+      font-size: 45px; }
+  .main-banner img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover; }
+
+  .menu {
+    display: block; }
+
+  .closeBtn {
+    display: none; }
+
+  .top-header__nav {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    transition: .5s; }
+    .top-header__nav ul {
+      padding-top: 40vh;
+      width: 100vw;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center; }
+      .top-header__nav ul li {
+        margin: 15px 0; }
+        .top-header__nav ul li a {
+          font-size: 40px; }
+
+  .btnMore {
+    padding: 7px 50px; }
+
+  .section-gap {
+    margin-bottom: 50px; }
+
+  .title-item h2 {
+    margin-bottom: 42px;
+    font-size: 42px; }
+  .title-item h3 {
+    margin-bottom: 28px;
+    font-size: 28px; }
+
+  .featureHotel {
+    background-image: url("../img/winter-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 554px; }
+    .featureHotel__header {
+      text-shadow: 1px 3px 7px rgba(0, 0, 0, 0.35);
+      color: #ffffff;
+      font-family: "Bebas Neue Bold";
+      font-size: 80px;
+      font-weight: 400;
+      line-height: 70px;
+      text-transform: uppercase;
+      letter-spacing: 2.75px; }
+
+  .footer {
+    flex-direction: column; }
+    .footer__item {
+      margin: auto; }
+    .footer-feedback {
+      text-align: center; }
+
+  .footer-links {
+    width: 100%;
+    flex-direction: column;
+    text-align: center; }
+
+  .footer-feedback {
+    margin-bottom: 50px; } }
+
+/*# sourceMappingURL=media.css.map */
