@@ -1,0 +1,496 @@
+@font-face {
+    font-family: Proxima Nova;
+    src: url(../fonts/ProximaNovaT-Thin.ttf); 
+}
+   @font-face {
+   font-family: Forever Brush Script;
+    src: url(../fonts/Forever\ Brush\ Script\ Demo.ttf);
+   }
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    box-sizing: border-box;
+}
+
+header{
+    padding-top: 40px;
+    background: transparent;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    a{
+        text-decoration: none;
+        font-family: "Proxima Nova";
+        color: #fff;
+        font-size: 31px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+}
+
+.header-navigation{
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 32px;
+    ul{
+        display: flex;
+        text-decoration: none;
+    }
+    li{
+        padding-right: 50px;
+        list-style: none;
+    }
+    li:not(:last-of-type){
+        padding-right: 50px;
+    }
+    a{
+        text-decoration: none;
+        color: #ffffff;
+        font-family: "Proxima Nova A";
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+}
+
+.adaptive-menu{
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 20px;
+   
+    flex-direction: column;
+}
+    .top-nav-line{
+        
+        top: 0; 
+        height: 3px;
+        background: #ffffff;
+        transition: .5s;
+      position: absolute;
+        width: 30px;
+    }
+    .center-nav-line{
+      position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);   
+        height: 3px;
+        background: #ffffff;
+        transition: .5s;
+     
+        width: 30px;
+    }
+    .bottom-nav-line{
+        position: absolute;
+        bottom: 0;
+        height: 3px;
+        background: #ffffff;
+        transition: .5s;
+        
+        width: 30px;
+    }
+    .top-nav-line-click{
+        transform: rotate(45deg);
+       
+    }
+
+
+.main-background_img{
+    background-position: center center;
+    background-image: url("../img/bg_banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 220px;
+    color: #ffffff;
+    font-family: "Proxima Nova T - Thin";
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.main-subtitle{ 
+    margin-top: 50px;
+    padding-bottom: 500px;
+    display: flex;
+    justify-content: center;
+   
+    h4{
+        width: 44%;
+        text-align: center;
+        color: #ffffff;
+        font-family: "Proxima Nova A";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+}
+
+.sushi-item{
+    padding: 123px 5%;
+    background-color: #962323;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.sushi-item img{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.title-h2{
+    
+    color: #ffffff;
+    font-family: "Forever Brush Script";
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 32px;
+    
+}
+
+.line{
+    margin: 30px auto 50px;
+    width: 108px;
+    height: 2px;
+    
+}
+
+.white-line{
+    background-color: #fff;
+}
+
+.red-line{
+    background-color: #c8235d;
+}
+
+.sushi-text{
+    margin-top: 56px;
+    max-width: 508px;
+    display: flex;
+    flex-direction: column;
+    p{
+
+    color: #ffffff;
+    font-family: "Proxima Nova A";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    }
+}
+
+.singatures-recipes{
+    background-image: url("../img/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.singatures-recipes-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 120px 0;
+    text-align: center;
+    p{
+        margin: 0px auto;
+        width: 508px;
+        color: #ffffff;
+        font-family: "Proxima Nova A";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+   
+}
+
+.our-menu{
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.our-menu-title{
+    color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-grid-items{
+    margin: 110px 20%;
+    display: grid;  
+    grid-column-gap: 186px;
+    grid-row-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.menu-item{
+    max-width: 460px;
+   
+}
+
+.dish-name{
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    
+
+    h5{
+        color: #0b0c0d;
+        font-family: "Proxima Nova A";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        text-transform: uppercase;
+        }
+
+        P{
+            opacity: 0.7;
+            color: #0b0c0d;
+            font-family: "Proxima Nova A";
+            font-size: 16px;
+            font-weight: 400;
+        }
+}
+
+.prise{
+
+    color: #c8235d;
+    font-family: "Proxima Nova A";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+
+
+.support{
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #25262a;
+}
+
+.support-item{
+    padding: 40px 20px 40px 0px;
+    color: aliceblue;
+    h4, h5{
+        margin-bottom: 50px;
+    }
+    h4{
+    color: #ffffff;
+    font-family: "Font Awesome 5 Brands Regular";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 24px;
+    }
+    h5{
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    }
+    ul{
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: #ffffff;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 32px;
+            }
+        }
+    }
+}
+
+.restaurant{
+    max-width: 265px;
+    P{
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    }
+}
+
+
+.contact img{
+    padding-right: 18px;
+}
+
+
+footer{
+    padding: 38px 0px 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #000;
+    ul{
+        li{
+            list-style: none;
+            display: inline-block;
+           
+        }
+    } a{
+        text-decoration: none;
+        color: #494a4c;
+    }
+}
+
+.footer-navigation{
+    li{
+       padding: 0 25px; 
+       a:hover{
+            color: #fff;
+       }
+    }
+}
+
+
+.footer-social-links{
+    li{
+        padding: 0px 15px;
+        a{
+            color: #bebbc6;
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1460px){
+    .menu-grid-items{
+        margin: 110px 10%;
+        display: grid;  
+        grid-column-gap: 186px;
+        grid-row-gap: 50px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 800px){
+    h1{
+        text-align: center;
+        margin-top: 220px;
+        color: #ffffff;
+        font-family: "Proxima Nova T - Thin";
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 32px;
+        text-transform: uppercase;
+    }
+    .main-subtitle{ 
+        margin-top: 50px;
+        padding-bottom: 500px;
+        display: flex;
+        justify-content: center;
+       
+        h4{
+            width: 80vw;
+            text-align: center;
+            color: #ffffff;
+            font-family: "Proxima Nova A";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 32px;
+        }
+    }
+
+    .title-h2{
+        color: #ffffff;
+        font-family: "Forever Brush Script";
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 32px;
+        
+    }
+
+    .header-navigation{
+        display: none;
+    }
+
+    .adaptive-menu{
+        display: flex;
+    }
+    .menu-grid-items{
+        margin: 110px 40px;
+        justify-content: center;
+        display: grid;  
+        grid-column-gap: 186px;
+        grid-row-gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .menu-item{
+        max-width: 90vw;
+       
+    }
+    .singatures-recipes-item{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        padding: 120px 0;
+        text-align: center;
+        p{
+            margin: 0px auto;
+            width: 85vw;
+        }
+       
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-navigation{
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+        li{
+           padding: 0 25px; 
+           a:hover{
+                color: #fff;
+           }
+        }
+    }
+       
+}
+
+
+@media screen and (max-width: 540px){
+    h1{
+        text-align: center;
+        margin-top: 220px;
+        color: #ffffff;
+        font-family: "Proxima Nova T - Thin";
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 32px;
+        text-transform: uppercase;
+    }
+}
