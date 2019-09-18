@@ -1,0 +1,135 @@
+@media screen and (max-width: 1067px) {
+  .personalTrain__container {
+    flex-direction: column; }
+
+  .personalTrain__left {
+    margin-top: 40px; } }
+@media screen and (max-width: 950px) {
+  .formSection__name {
+    flex-wrap: wrap; }
+    .formSection__name input {
+      width: 100%; }
+
+  .sectionName {
+    position: static;
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    padding: 20px 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto; }
+
+  .team__wrap {
+    height: 100%; }
+  .team__img {
+    position: static;
+    margin: auto; }
+  .team__staff {
+    position: static;
+    width: 100%;
+    max-width: 480px;
+    margin: auto; }
+
+  .schedule__content {
+    flex-direction: column; }
+  .schedule__inner-blocks {
+    margin: auto; }
+  .schedule__nav ul {
+    flex-direction: column; }
+    .schedule__nav ul li {
+      margin: 10px auto; } }
+@media screen and (max-width: 740px) {
+  .aboutUs-sumItems {
+    flex-wrap: wrap; }
+    .aboutUs-sumItems img {
+      max-width: 100%;
+      display: block;
+      object-fit: cover;
+      margin: auto; }
+
+  .top-section__block {
+    margin-top: 20px;
+    flex-direction: column; }
+    .top-section__block-singUp h2 {
+      margin-bottom: 25px; }
+
+  .fitness {
+    position: static; }
+    .fitness__bg img {
+      display: block;
+      max-width: 100%;
+      object-fit: cover;
+      opacity: 0; }
+
+  .schedule__nav ul {
+    flex-direction: column; }
+    .schedule__nav ul li {
+      margin: 10px auto; }
+
+  .footerBottomleftTringle {
+    border-right: 50vw solid transparent; }
+
+  .footerBottomRightTringle {
+    border-left: 50vw solid transparent; }
+
+  .schedule-block {
+    width: 100%;
+    width: 75vw; }
+  .schedule__inner-blocks {
+    margin: auto;
+    flex-direction: column; }
+    .schedule__inner-blocks-left {
+      margin-right: 0px; }
+
+  .copiright {
+    margin-top: -20px; } }
+@media screen and (max-width: 640px) {
+  .popup {
+    max-width: 100%;
+    width: calc(100% - 100px); }
+
+  .top-section {
+    background-position-x: 70%; }
+
+  .siteNav ul {
+    display: none;
+    padding-top: 50%;
+    background-color: rgba(32, 25, 27, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    text-align: center;
+    z-index: 9999; }
+    .siteNav ul li {
+      margin: 30px auto; }
+      .siteNav ul li a {
+        font-size: 20px; }
+
+  .menuBtn {
+    display: block; }
+
+  .footer__form-input {
+    margin-bottom: 0px;
+    flex-direction: column; }
+    .footer__form-input input {
+      width: calc(100% - 18px);
+      margin-bottom: 15px; } }
+@media screen and (max-width: 400px) {
+  .nice-date-picker-warpper {
+    padding: 0;
+    width: 280px; }
+
+  .nice-normal {
+    font-size: 12px; }
+
+  .calendar {
+    margin: auto; }
+    .calendar__recomend {
+      padding: 10px; } }
+
+/*# sourceMappingURL=media.css.map */
